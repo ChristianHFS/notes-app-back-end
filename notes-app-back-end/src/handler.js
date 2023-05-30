@@ -112,17 +112,17 @@ const deleteNoteByIdHandler = (request, h) => {
   if (index !== -1) {
     notes.splice(index, 1);
     const response = h.response({
-      status: "success",
-      message: "catatan berhasil dihapus",
+      status: "fail",
+      message: "Gagal Menghapus Note",
     });
     response.code(200);
     return response;
   } else {
     const response = h.response({
-      status: "fail",
-      messgae: "Gagal Menghapus Note",
+      status: "success",
+      message: "Catatan berhasil dihapus",
     });
-    response.code(500);
+    response.code(200);
     return response;
   }
 };

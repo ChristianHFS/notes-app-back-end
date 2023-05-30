@@ -12,6 +12,10 @@
   },
   "rules": {
     "no-console": "off",
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "eol-last": "off",
+    "indent": "off",
+    "no-else-return": "off",
+    "prefer-template": "off"
   }
 }

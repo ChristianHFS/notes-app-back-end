@@ -1,4 +1,3 @@
-// Import Handler
 const {
   addNoteHandler,
   getAllNotesHandler,
@@ -8,36 +7,29 @@ const {
 } = require("./handler");
 
 const routes = [
-  // Post New Notes
-
   {
     method: "POST",
     path: "/notes",
     handler: addNoteHandler,
   },
 
-  // Get All Notes
   {
     method: "GET",
     path: "/notes",
     handler: getAllNotesHandler,
   },
 
-  // Get Notes by Id
   {
     method: "GET",
     path: "/notes/{id}",
     handler: getNoteByIdHandler,
   },
 
-  // Edit Notes by Id
   {
     method: "PUT",
     path: "/notes/{id}",
     handler: editNoteByIdHandler,
   },
-
-  // Delete Note by Handler
 
   {
     method: "DELETE",
@@ -46,5 +38,4 @@ const routes = [
   },
 ];
 
-// Export Routes
 module.exports = routes;
